@@ -1,0 +1,28 @@
+PODS:
+  - CocoaAsyncSocket (7.6.5)
+  - JSONModel (1.8.0)
+  - PepperPairing (0.1.0):
+    - CocoaAsyncSocket (~> 7.6.5)
+
+DEPENDENCIES:
+  - CocoaAsyncSocket (~> 7.6.5)
+  - JSONModel (~> 1.8.0)
+  - PepperPairing (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - CocoaAsyncSocket
+    - JSONModel
+
+EXTERNAL SOURCES:
+  PepperPairing:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
+  JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
+  PepperPairing: 865205379f5bf0c5bf0b59f92bbc79ffcb13a679
+
+PODFILE CHECKSUM: 1baf3541b61f4817d824ef34c757184e96bb669d
+
+COCOAPODS: 1.10.0

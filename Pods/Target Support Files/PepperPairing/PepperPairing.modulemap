@@ -1,0 +1,6 @@
+framework module PepperPairing {
+  umbrella header "PepperPairing-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,1319 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02E2954BD351E7B167D8F60B13208DAF /* JSONModelError.h in Headers */ = {isa = PBXBuildFile; fileRef = F213591EEDEAD80E43165E87569F573C /* JSONModelError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1071D84B6431759A11FAEBAAE29E3F32 /* JSONHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 880253F36F54CF7257631BBCF5EDAB3E /* JSONHTTPClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		191126E8D5A1E26339D2B767EF3AE197 /* JSONModel+networking.h in Headers */ = {isa = PBXBuildFile; fileRef = 357BD559DF1AF43A7150A6D06C235EB9 /* JSONModel+networking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19125FFED6290E5732C552A098C20D39 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C9F4ABC5E266C8D62D69FF90B78852 /* CFNetwork.framework */; };
+		1C7C608091334B29AA1F96D400B24326 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2A4516B095A5ED8A0FC7517F3DB4F4 /* GCDAsyncSocket.m */; };
+		26A3D3037A05E7E99AFF098D11427775 /* JSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FC0361C2F3F013BAC8124A38489E87 /* JSONKeyMapper.m */; };
+		2922C954DCA50DB1C087E9E9C9440393 /* CocoaAsyncSocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C4160C8DA0BF283143ED415745CCB0F4 /* CocoaAsyncSocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3AEA2F22B88CD78E671F25B60DB66ADA /* JSONAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 2374B9EB04AC649C25F1397520F9E6A2 /* JSONAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DA0DCAA95457E4EF17F815C49F86D1F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23E3F66BDA87E39DF624F9C40B0C6D92 /* Foundation.framework */; };
+		411EE6BA92B228BF3497175C14FC7A90 /* GCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 34396FFB66CD46FA47981BC82C57B83F /* GCDAsyncUdpSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		501119DC0CF2877F95F7B9D75CA39F90 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA0B6A8704D7C2959D2609DB6487B5C7 /* Security.framework */; };
+		632A5CDDEABDA1FB093AC7484D100B77 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23E3F66BDA87E39DF624F9C40B0C6D92 /* Foundation.framework */; };
+		6844C61FD241B8F2801FD825F2257230 /* Pods-PepperPairing_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C112B269322657A09DD5684BC9B0EF19 /* Pods-PepperPairing_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FCDE0D44543F4DABF90A88E056D8199 /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 68DD96BD6A9D9B95909F36E7ECE34CC4 /* JSONModel.m */; };
+		6FFB23DD5E8DD756D3A4AB53EEE4BA8E /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 764697DE3DFDDF065288AC9187CA7415 /* GCDAsyncUdpSocket.m */; };
+		75C939C90205A780AB001C84A0B90C24 /* JSONModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F7CDF10E3610FBA6315C63A6F4CDE9A /* JSONModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78FB367CED1A89B739A3F332D406705C /* Pods-PepperPairing_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C24F7674810B9FB534136B5FC0C7853F /* Pods-PepperPairing_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C5C30286098F3D7B720ED9CDCA4C07A /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5F157F703F8134396B2E2D2D64ED7AC /* CocoaAsyncSocket.framework */; };
+		92A2EE937DD5518762F99782A3CE3C5F /* TcpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 461839B5A44FA34BE9673CAA84A4D698 /* TcpSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A52DD788A5384665F425D6A2C7493AD0 /* JSONModelError.m in Sources */ = {isa = PBXBuildFile; fileRef = CD13860B02216DAF9C53F2B8E21EAB9F /* JSONModelError.m */; };
+		A67687AC6EA60C3FD5C8947D4A5A1229 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23E3F66BDA87E39DF624F9C40B0C6D92 /* Foundation.framework */; };
+		B0BA1C31A2A3AB25BC95A4B2DE0A7B5D /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = F83435FEEAB1BB9884DF5F24EB4B20D0 /* JSONValueTransformer.m */; };
+		B4C7BC969594EB3E9323674B7FF7C66E /* JSONHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E7DD1AA62E8E03FFB4B70BAACBCD42 /* JSONHTTPClient.m */; };
+		B98F2B09F54366A304C00B09272ECA38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23E3F66BDA87E39DF624F9C40B0C6D92 /* Foundation.framework */; };
+		BD144AD138283B3B48934DF2DB66A77E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23E3F66BDA87E39DF624F9C40B0C6D92 /* Foundation.framework */; };
+		C0BA8F451936EBF752F8D2524922AF4F /* Pods-PepperPairing_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCBAC721A9DD7EFE2C2C0B044704A4F /* Pods-PepperPairing_Tests-dummy.m */; };
+		C25BD96E691172D62B98B2F5F8D7F0C7 /* JSONModelLib.h in Headers */ = {isa = PBXBuildFile; fileRef = AB1A6CC30A0B1991957AFA0FE7066A79 /* JSONModelLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C64C8DE746D376EEA160794275302677 /* JSONModelClassProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3A727648F1BEB17CD5C649FCB2D3D7 /* JSONModelClassProperty.m */; };
+		C65CBBF120A2DD097498BFA38119D466 /* JSONAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E99C77FA41445F8B406F93F598842A /* JSONAPI.m */; };
+		C65CF9DE26729331007C8857 /* JSONHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C65CF9DD26729331007C8857 /* JSONHelper.m */; };
+		C65CF9E526729349007C8857 /* JSONHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = C65CF9E426729349007C8857 /* JSONHelper.h */; };
+		C668E3862673F0C200C893AF /* SoftAPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA50DBAC57FF8872A5C2A2478B8B55E /* SoftAPManager.m */; };
+		C668E3912673F0C700C893AF /* SoftAPResponses.h in Headers */ = {isa = PBXBuildFile; fileRef = C65CFA152673E550007C8857 /* SoftAPResponses.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C668E39C2673F0CB00C893AF /* SoftAPResponses.m in Sources */ = {isa = PBXBuildFile; fileRef = C65CFA0E2673E536007C8857 /* SoftAPResponses.m */; };
+		C668E3E42673F72500C893AF /* SoftApStartParams.m in Sources */ = {isa = PBXBuildFile; fileRef = C668E3E32673F72500C893AF /* SoftApStartParams.m */; };
+		C668E408267798BF00C893AF /* CryptoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C668E407267798BE00C893AF /* CryptoHelper.m */; };
+		C668E40F267798CD00C893AF /* CryptoHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = C668E40E267798CD00C893AF /* CryptoHelper.h */; };
+		C66F44EA26728A3F0058F11E /* SoftAPWifiCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = C66F44E026728A3F0058F11E /* SoftAPWifiCommand.h */; };
+		C66F44EB26728A3F0058F11E /* SoftAPEncryptedWifiData.h in Headers */ = {isa = PBXBuildFile; fileRef = C66F44E126728A3F0058F11E /* SoftAPEncryptedWifiData.h */; };
+		C66F44EC26728A3F0058F11E /* SoftAPCommandBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C66F44E226728A3F0058F11E /* SoftAPCommandBase.m */; };
+		C66F44ED26728A3F0058F11E /* SoftAPAccountCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = C66F44E326728A3F0058F11E /* SoftAPAccountCommand.m */; };
+		C66F44EE26728A400058F11E /* SoftAPEncryptedWifiCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = C66F44E426728A3F0058F11E /* SoftAPEncryptedWifiCommand.m */; };
+		C66F44EF26728A400058F11E /* SoftAPAccountCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = C66F44E526728A3F0058F11E /* SoftAPAccountCommand.h */; };
+		C66F44F026728A400058F11E /* SoftAPCommandBase.h in Headers */ = {isa = PBXBuildFile; fileRef = C66F44E626728A3F0058F11E /* SoftAPCommandBase.h */; };
+		C66F44F126728A400058F11E /* SoftAPEncryptedWifiData.m in Sources */ = {isa = PBXBuildFile; fileRef = C66F44E726728A3F0058F11E /* SoftAPEncryptedWifiData.m */; };
+		C66F44F226728A400058F11E /* SoftAPWifiCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = C66F44E826728A3F0058F11E /* SoftAPWifiCommand.m */; };
+		C66F44F326728A400058F11E /* SoftAPEncryptedWifiCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = C66F44E926728A3F0058F11E /* SoftAPEncryptedWifiCommand.h */; };
+		C6A8FC992677A4290003DAA1 /* SoftApStartParams.h in Headers */ = {isa = PBXBuildFile; fileRef = C6A8FC982677A4290003DAA1 /* SoftApStartParams.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7850AB3F7B5FDCA4F1F47F1EC205276 /* JSONKeyMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = C525826EAC96A9B076F8423D3DACDBC4 /* JSONKeyMapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C861E9BB191BDFF051C6EBBFEF00A6DF /* PepperPairing-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E06BF851F88650FB859AA1735B3B1624 /* PepperPairing-dummy.m */; };
+		C994BC52E067FC5342520CF6C095769E /* TcpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = D8FB8180E22AA96A34B8E6BD3419E94A /* TcpSocket.m */; };
+		CFD38BDDB48F8D35B9A858E957A933A2 /* JSONModel+networking.m in Sources */ = {isa = PBXBuildFile; fileRef = 851DB412CAC96A0976D4868B73A3E39D /* JSONModel+networking.m */; };
+		D12B319179384589BDC8DAA78A9D1E81 /* PepperPairing-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 231CA7854690FDEA9BBE625DF18B4326 /* PepperPairing-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D358BCEB69D2E10B9BC6504C93D7D14C /* JSONModelClassProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = B98A7427B9935E39B49AE01C7284B0AB /* JSONModelClassProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF77DA76BD5962EE7DD383126BBBBAC8 /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 335CA76D2059674C9B1799D04DA750E2 /* GCDAsyncSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFF8D80125C062F6646E6EE798E6ABA3 /* JSONModel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6309152B922DF7DD81B544637CDA9B79 /* JSONModel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3886BA871A93B03E984D8BD7823D947 /* JSONValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E0F90A437D214AE8B6C1485D11D8B74 /* JSONValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F35C9D85B892F665601ABD6A63A46E37 /* Pods-PepperPairing_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BB131D33A3692D91D826B5E38FE253 /* Pods-PepperPairing_Example-dummy.m */; };
+		F442593E37B8F49398FDB1974EDF3FD6 /* JSONModel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 40962C4B60D7672344202F3F4D4C621A /* JSONModel-dummy.m */; };
+		F91B873BE7A0C90841F96C7082C2FDEB /* SoftAPManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 666C680CAC6A6AF9DD85969FC3E04E99 /* SoftAPManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBB70AF3F803450935EE98C837D98688 /* CocoaAsyncSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D8CCFD3AFAC2463379071C9A18B349 /* CocoaAsyncSocket-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		15E6BB2251BBAE6FEC29A2151146AEED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C07B92F840B19D7D2551BBDFE77B1AF7;
+			remoteInfo = PepperPairing;
+		};
+		45396E4A488E99315FB7A397769C3696 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0EAF4371C6E4B30A1779D513CB4355B;
+			remoteInfo = JSONModel;
+		};
+		71C0AAED571EEDCFDF61687A96212DDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6083682834ABE0AE7BD1CBF06CADD036;
+			remoteInfo = CocoaAsyncSocket;
+		};
+		C1C763421DD097ACC496AEE0E2AAD161 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6083682834ABE0AE7BD1CBF06CADD036;
+			remoteInfo = CocoaAsyncSocket;
+		};
+		F1E1B7021AEA3067E30A1B2917B56842 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB8D36295A60CFFDD6BA04419FD2142E;
+			remoteInfo = "Pods-PepperPairing_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05C9F4ABC5E266C8D62D69FF90B78852 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		231CA7854690FDEA9BBE625DF18B4326 /* PepperPairing-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PepperPairing-umbrella.h"; sourceTree = "<group>"; };
+		2374B9EB04AC649C25F1397520F9E6A2 /* JSONAPI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONAPI.h; path = JSONModel/JSONModelNetworking/JSONAPI.h; sourceTree = "<group>"; };
+		23E3F66BDA87E39DF624F9C40B0C6D92 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		25685113D52327950321ACDE6E043C3C /* Pods-PepperPairing_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PepperPairing_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		298E7FE1B5C01F463255EA6D508BE825 /* PepperPairing.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PepperPairing.modulemap; sourceTree = "<group>"; };
+		2FD0449FA8304BA2F434771C2109A209 /* CocoaAsyncSocket-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CocoaAsyncSocket-Info.plist"; sourceTree = "<group>"; };
+		32179746E0E78C1C5F7A176AF16E0F91 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		335CA76D2059674C9B1799D04DA750E2 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = Source/GCD/GCDAsyncSocket.h; sourceTree = "<group>"; };
+		34396FFB66CD46FA47981BC82C57B83F /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = Source/GCD/GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		357BD559DF1AF43A7150A6D06C235EB9 /* JSONModel+networking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "JSONModel+networking.h"; path = "JSONModel/JSONModelNetworking/JSONModel+networking.h"; sourceTree = "<group>"; };
+		3799222908DBFA8286F3AD623EB02E0F /* CocoaAsyncSocket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaAsyncSocket.release.xcconfig; sourceTree = "<group>"; };
+		38E395318B239826A7133B62701E078C /* Pods-PepperPairing_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PepperPairing_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3AA50DBAC57FF8872A5C2A2478B8B55E /* SoftAPManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SoftAPManager.m; path = PepperPairing/Classes/SoftAPManager.m; sourceTree = "<group>"; };
+		3FCBAC721A9DD7EFE2C2C0B044704A4F /* Pods-PepperPairing_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PepperPairing_Tests-dummy.m"; sourceTree = "<group>"; };
+		40962C4B60D7672344202F3F4D4C621A /* JSONModel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JSONModel-dummy.m"; sourceTree = "<group>"; };
+		44918B2164B0EDBD71685952E960F398 /* JSONModel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JSONModel-prefix.pch"; sourceTree = "<group>"; };
+		461839B5A44FA34BE9673CAA84A4D698 /* TcpSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TcpSocket.h; path = PepperPairing/Classes/TcpSocket.h; sourceTree = "<group>"; };
+		4A966E9F4F132E96CB4984023BDF617D /* PepperPairing-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PepperPairing-Info.plist"; sourceTree = "<group>"; };
+		4C4258031DFEAD4DBCC376786C60EB29 /* Pods-PepperPairing_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PepperPairing_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		4EDD9FAFE0FC399ECCADE00263A56709 /* Pods-PepperPairing_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PepperPairing_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		5438607C0C50193FC5261B6DB34571DB /* Pods_PepperPairing_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PepperPairing_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55CC738A69D32D39E9B2DF0075E2DE76 /* Pods-PepperPairing_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PepperPairing_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		5900740839260D57B396B8A58E4E5136 /* CocoaAsyncSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-prefix.pch"; sourceTree = "<group>"; };
+		5AD1B7EA9F2DD53BF178F661ED6B3247 /* Pods-PepperPairing_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PepperPairing_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5B7F543FCB32DC2817FAE9FFAAE0DC46 /* Pods_PepperPairing_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PepperPairing_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6309152B922DF7DD81B544637CDA9B79 /* JSONModel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JSONModel-umbrella.h"; sourceTree = "<group>"; };
+		666C680CAC6A6AF9DD85969FC3E04E99 /* SoftAPManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SoftAPManager.h; path = PepperPairing/Classes/SoftAPManager.h; sourceTree = "<group>"; };
+		68DD96BD6A9D9B95909F36E7ECE34CC4 /* JSONModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONModel.m; path = JSONModel/JSONModel/JSONModel.m; sourceTree = "<group>"; };
+		6CBEFE4F9E22AFDC6347A739BB35FF8C /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DD5551EE6A242BEBAAAD45C64FD75F5 /* JSONModel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JSONModel.modulemap; sourceTree = "<group>"; };
+		6F7CDF10E3610FBA6315C63A6F4CDE9A /* JSONModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONModel.h; path = JSONModel/JSONModel/JSONModel.h; sourceTree = "<group>"; };
+		764697DE3DFDDF065288AC9187CA7415 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = Source/GCD/GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		768585A175D0AD13B648BB46E9CFC7E2 /* Pods-PepperPairing_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PepperPairing_Tests-Info.plist"; sourceTree = "<group>"; };
+		84E29ECB1F420FFFBE89D5F353B3A3CA /* JSONModel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JSONModel-Info.plist"; sourceTree = "<group>"; };
+		851DB412CAC96A0976D4868B73A3E39D /* JSONModel+networking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "JSONModel+networking.m"; path = "JSONModel/JSONModelNetworking/JSONModel+networking.m"; sourceTree = "<group>"; };
+		880253F36F54CF7257631BBCF5EDAB3E /* JSONHTTPClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONHTTPClient.h; path = JSONModel/JSONModelNetworking/JSONHTTPClient.h; sourceTree = "<group>"; };
+		89F37EA3836B73B8C9829C4F45685DA5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		8E0F90A437D214AE8B6C1485D11D8B74 /* JSONValueTransformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONValueTransformer.h; path = JSONModel/JSONModelTransformations/JSONValueTransformer.h; sourceTree = "<group>"; };
+		8E1E518CAA6BE26FDEABCD49137331DB /* Pods-PepperPairing_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PepperPairing_Example-Info.plist"; sourceTree = "<group>"; };
+		9036B48E341B03E8E34F222C4DB198A2 /* PepperPairing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PepperPairing.release.xcconfig; sourceTree = "<group>"; };
+		96E7DD1AA62E8E03FFB4B70BAACBCD42 /* JSONHTTPClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONHTTPClient.m; path = JSONModel/JSONModelNetworking/JSONHTTPClient.m; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A3906EF035F8C227B6AEE2DCE43B3BD6 /* PepperPairing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PepperPairing.debug.xcconfig; sourceTree = "<group>"; };
+		A6E99C77FA41445F8B406F93F598842A /* JSONAPI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONAPI.m; path = JSONModel/JSONModelNetworking/JSONAPI.m; sourceTree = "<group>"; };
+		AB1A6CC30A0B1991957AFA0FE7066A79 /* JSONModelLib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONModelLib.h; path = JSONModel/JSONModelLib.h; sourceTree = "<group>"; };
+		B185F4A313595B362F745100D15524C3 /* JSONModel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JSONModel.release.xcconfig; sourceTree = "<group>"; };
+		B5D8CCFD3AFAC2463379071C9A18B349 /* CocoaAsyncSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CocoaAsyncSocket-dummy.m"; sourceTree = "<group>"; };
+		B5E70088CAD5D21F304A7B67DA91DC6F /* PepperPairing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PepperPairing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B98A7427B9935E39B49AE01C7284B0AB /* JSONModelClassProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONModelClassProperty.h; path = JSONModel/JSONModel/JSONModelClassProperty.h; sourceTree = "<group>"; };
+		BA0B6A8704D7C2959D2609DB6487B5C7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		BAACA1BF7AB3DD28402C4F9A7C2FD104 /* JSONModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSONModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C112B269322657A09DD5684BC9B0EF19 /* Pods-PepperPairing_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PepperPairing_Tests-umbrella.h"; sourceTree = "<group>"; };
+		C24F7674810B9FB534136B5FC0C7853F /* Pods-PepperPairing_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PepperPairing_Example-umbrella.h"; sourceTree = "<group>"; };
+		C4160C8DA0BF283143ED415745CCB0F4 /* CocoaAsyncSocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-umbrella.h"; sourceTree = "<group>"; };
+		C525826EAC96A9B076F8423D3DACDBC4 /* JSONKeyMapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONKeyMapper.h; path = JSONModel/JSONModelTransformations/JSONKeyMapper.h; sourceTree = "<group>"; };
+		C5BB131D33A3692D91D826B5E38FE253 /* Pods-PepperPairing_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PepperPairing_Example-dummy.m"; sourceTree = "<group>"; };
+		C65CF9DD26729331007C8857 /* JSONHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JSONHelper.m; path = PepperPairing/Classes/JSONHelper.m; sourceTree = "<group>"; };
+		C65CF9E426729349007C8857 /* JSONHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JSONHelper.h; path = PepperPairing/Classes/JSONHelper.h; sourceTree = "<group>"; };
+		C65CFA0E2673E536007C8857 /* SoftAPResponses.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SoftAPResponses.m; path = PepperPairing/Classes/SoftAPResponses.m; sourceTree = "<group>"; };
+		C65CFA152673E550007C8857 /* SoftAPResponses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SoftAPResponses.h; path = PepperPairing/Classes/SoftAPResponses.h; sourceTree = "<group>"; };
+		C668E3E32673F72500C893AF /* SoftApStartParams.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SoftApStartParams.m; path = PepperPairing/Classes/SoftApStartParams.m; sourceTree = "<group>"; };
+		C668E407267798BE00C893AF /* CryptoHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CryptoHelper.m; path = PepperPairing/Classes/CryptoHelper.m; sourceTree = "<group>"; };
+		C668E40E267798CD00C893AF /* CryptoHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CryptoHelper.h; path = PepperPairing/Classes/CryptoHelper.h; sourceTree = "<group>"; };
+		C66F44E026728A3F0058F11E /* SoftAPWifiCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoftAPWifiCommand.h; sourceTree = "<group>"; };
+		C66F44E126728A3F0058F11E /* SoftAPEncryptedWifiData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoftAPEncryptedWifiData.h; sourceTree = "<group>"; };
+		C66F44E226728A3F0058F11E /* SoftAPCommandBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoftAPCommandBase.m; sourceTree = "<group>"; };
+		C66F44E326728A3F0058F11E /* SoftAPAccountCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoftAPAccountCommand.m; sourceTree = "<group>"; };
+		C66F44E426728A3F0058F11E /* SoftAPEncryptedWifiCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoftAPEncryptedWifiCommand.m; sourceTree = "<group>"; };
+		C66F44E526728A3F0058F11E /* SoftAPAccountCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoftAPAccountCommand.h; sourceTree = "<group>"; };
+		C66F44E626728A3F0058F11E /* SoftAPCommandBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoftAPCommandBase.h; sourceTree = "<group>"; };
+		C66F44E726728A3F0058F11E /* SoftAPEncryptedWifiData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoftAPEncryptedWifiData.m; sourceTree = "<group>"; };
+		C66F44E826728A3F0058F11E /* SoftAPWifiCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoftAPWifiCommand.m; sourceTree = "<group>"; };
+		C66F44E926728A3F0058F11E /* SoftAPEncryptedWifiCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoftAPEncryptedWifiCommand.h; sourceTree = "<group>"; };
+		C686019CADCF352A40AED3F0A65C01ED /* CocoaAsyncSocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CocoaAsyncSocket.modulemap; sourceTree = "<group>"; };
+		C6A8FC982677A4290003DAA1 /* SoftApStartParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoftApStartParams.h; path = PepperPairing/Classes/SoftApStartParams.h; sourceTree = "<group>"; };
+		C7DA69A495D477EFA1ED23F546A1F39F /* Pods-PepperPairing_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PepperPairing_Example.modulemap"; sourceTree = "<group>"; };
+		C8FC0361C2F3F013BAC8124A38489E87 /* JSONKeyMapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONKeyMapper.m; path = JSONModel/JSONModelTransformations/JSONKeyMapper.m; sourceTree = "<group>"; };
+		CD13860B02216DAF9C53F2B8E21EAB9F /* JSONModelError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONModelError.m; path = JSONModel/JSONModel/JSONModelError.m; sourceTree = "<group>"; };
+		D5102F62C80B61EF8B25B84E374D062B /* PepperPairing-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PepperPairing-prefix.pch"; sourceTree = "<group>"; };
+		D5F157F703F8134396B2E2D2D64ED7AC /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8FB8180E22AA96A34B8E6BD3419E94A /* TcpSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TcpSocket.m; path = PepperPairing/Classes/TcpSocket.m; sourceTree = "<group>"; };
+		D953DF8108E13BC6DD8FE719E657E922 /* Pods-PepperPairing_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PepperPairing_Example-frameworks.sh"; sourceTree = "<group>"; };
+		DA9B533FFBA7E6710BE02F6EC84F9160 /* PepperPairing.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = PepperPairing.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E06BF851F88650FB859AA1735B3B1624 /* PepperPairing-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PepperPairing-dummy.m"; sourceTree = "<group>"; };
+		E23C6F6841B60801CFE0BCBE5FC1840B /* Pods-PepperPairing_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PepperPairing_Tests.modulemap"; sourceTree = "<group>"; };
+		E4E6C8050D6955C612D68280F7F9C7A4 /* CocoaAsyncSocket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaAsyncSocket.debug.xcconfig; sourceTree = "<group>"; };
+		E5667D8901AA92415B961CDDFEBF5BDB /* Pods-PepperPairing_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PepperPairing_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		F213591EEDEAD80E43165E87569F573C /* JSONModelError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONModelError.h; path = JSONModel/JSONModel/JSONModelError.h; sourceTree = "<group>"; };
+		F45B7325036797A153FB27CE4EFEC82C /* JSONModel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JSONModel.debug.xcconfig; sourceTree = "<group>"; };
+		F83435FEEAB1BB9884DF5F24EB4B20D0 /* JSONValueTransformer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONValueTransformer.m; path = JSONModel/JSONModelTransformations/JSONValueTransformer.m; sourceTree = "<group>"; };
+		FA2A4516B095A5ED8A0FC7517F3DB4F4 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = Source/GCD/GCDAsyncSocket.m; sourceTree = "<group>"; };
+		FC0A2AFEF3E46EE72741B89F784FA700 /* Pods-PepperPairing_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PepperPairing_Example.release.xcconfig"; sourceTree = "<group>"; };
+		FD3A727648F1BEB17CD5C649FCB2D3D7 /* JSONModelClassProperty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONModelClassProperty.m; path = JSONModel/JSONModel/JSONModelClassProperty.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		160EF26C734A27A9436CAB7143AF8F15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19125FFED6290E5732C552A098C20D39 /* CFNetwork.framework in Frameworks */,
+				BD144AD138283B3B48934DF2DB66A77E /* Foundation.framework in Frameworks */,
+				501119DC0CF2877F95F7B9D75CA39F90 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		469B8C42120B8CB8830174F09997DA5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DA0DCAA95457E4EF17F815C49F86D1F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53100FBB14241BFD223009E38EE40D38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C5C30286098F3D7B720ED9CDCA4C07A /* CocoaAsyncSocket.framework in Frameworks */,
+				A67687AC6EA60C3FD5C8947D4A5A1229 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7238FF00EC54DCA476E588369778E3B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B98F2B09F54366A304C00B09272ECA38 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		886E050E05F79FD43F2409BED7E67F73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				632A5CDDEABDA1FB093AC7484D100B77 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A3E0EE19DF23E1AD41A79EC8048EC9E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5F157F703F8134396B2E2D2D64ED7AC /* CocoaAsyncSocket.framework */,
+				5C7BDBD3D7B4117BCAC952A0A93A55F1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		241CA963C1B7F4B7433A931374B6C25D /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				848D33CF185FDB971F95740A946B177B /* PepperPairing */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		586C49A5E7516ACD1FEE0C36003077D8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6DD5551EE6A242BEBAAAD45C64FD75F5 /* JSONModel.modulemap */,
+				40962C4B60D7672344202F3F4D4C621A /* JSONModel-dummy.m */,
+				84E29ECB1F420FFFBE89D5F353B3A3CA /* JSONModel-Info.plist */,
+				44918B2164B0EDBD71685952E960F398 /* JSONModel-prefix.pch */,
+				6309152B922DF7DD81B544637CDA9B79 /* JSONModel-umbrella.h */,
+				F45B7325036797A153FB27CE4EFEC82C /* JSONModel.debug.xcconfig */,
+				B185F4A313595B362F745100D15524C3 /* JSONModel.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/JSONModel";
+			sourceTree = "<group>";
+		};
+		5C7BDBD3D7B4117BCAC952A0A93A55F1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				05C9F4ABC5E266C8D62D69FF90B78852 /* CFNetwork.framework */,
+				23E3F66BDA87E39DF624F9C40B0C6D92 /* Foundation.framework */,
+				BA0B6A8704D7C2959D2609DB6487B5C7 /* Security.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		601E8ACBAC8E9D01C67C0545DAF224C2 /* Pods-PepperPairing_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E23C6F6841B60801CFE0BCBE5FC1840B /* Pods-PepperPairing_Tests.modulemap */,
+				38E395318B239826A7133B62701E078C /* Pods-PepperPairing_Tests-acknowledgements.markdown */,
+				55CC738A69D32D39E9B2DF0075E2DE76 /* Pods-PepperPairing_Tests-acknowledgements.plist */,
+				3FCBAC721A9DD7EFE2C2C0B044704A4F /* Pods-PepperPairing_Tests-dummy.m */,
+				768585A175D0AD13B648BB46E9CFC7E2 /* Pods-PepperPairing_Tests-Info.plist */,
+				C112B269322657A09DD5684BC9B0EF19 /* Pods-PepperPairing_Tests-umbrella.h */,
+				4EDD9FAFE0FC399ECCADE00263A56709 /* Pods-PepperPairing_Tests.debug.xcconfig */,
+				25685113D52327950321ACDE6E043C3C /* Pods-PepperPairing_Tests.release.xcconfig */,
+			);
+			name = "Pods-PepperPairing_Tests";
+			path = "Target Support Files/Pods-PepperPairing_Tests";
+			sourceTree = "<group>";
+		};
+		6C0B13A48B87FF5F6CA9A20E433BB865 /* CocoaAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				335CA76D2059674C9B1799D04DA750E2 /* GCDAsyncSocket.h */,
+				FA2A4516B095A5ED8A0FC7517F3DB4F4 /* GCDAsyncSocket.m */,
+				34396FFB66CD46FA47981BC82C57B83F /* GCDAsyncUdpSocket.h */,
+				764697DE3DFDDF065288AC9187CA7415 /* GCDAsyncUdpSocket.m */,
+				7E1C8D688888964FBBCDA08581CA9A09 /* Support Files */,
+			);
+			path = CocoaAsyncSocket;
+			sourceTree = "<group>";
+		};
+		7E1C8D688888964FBBCDA08581CA9A09 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C686019CADCF352A40AED3F0A65C01ED /* CocoaAsyncSocket.modulemap */,
+				B5D8CCFD3AFAC2463379071C9A18B349 /* CocoaAsyncSocket-dummy.m */,
+				2FD0449FA8304BA2F434771C2109A209 /* CocoaAsyncSocket-Info.plist */,
+				5900740839260D57B396B8A58E4E5136 /* CocoaAsyncSocket-prefix.pch */,
+				C4160C8DA0BF283143ED415745CCB0F4 /* CocoaAsyncSocket-umbrella.h */,
+				E4E6C8050D6955C612D68280F7F9C7A4 /* CocoaAsyncSocket.debug.xcconfig */,
+				3799222908DBFA8286F3AD623EB02E0F /* CocoaAsyncSocket.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CocoaAsyncSocket";
+			sourceTree = "<group>";
+		};
+		848D33CF185FDB971F95740A946B177B /* PepperPairing */ = {
+			isa = PBXGroup;
+			children = (
+				C66F44DF26728A3F0058F11E /* Commands */,
+				3AA50DBAC57FF8872A5C2A2478B8B55E /* SoftAPManager.m */,
+				666C680CAC6A6AF9DD85969FC3E04E99 /* SoftAPManager.h */,
+				D8FB8180E22AA96A34B8E6BD3419E94A /* TcpSocket.m */,
+				461839B5A44FA34BE9673CAA84A4D698 /* TcpSocket.h */,
+				C65CFA0E2673E536007C8857 /* SoftAPResponses.m */,
+				C65CFA152673E550007C8857 /* SoftAPResponses.h */,
+				C65CF9DD26729331007C8857 /* JSONHelper.m */,
+				C65CF9E426729349007C8857 /* JSONHelper.h */,
+				C668E3E32673F72500C893AF /* SoftApStartParams.m */,
+				C6A8FC982677A4290003DAA1 /* SoftApStartParams.h */,
+				C668E407267798BE00C893AF /* CryptoHelper.m */,
+				C668E40E267798CD00C893AF /* CryptoHelper.h */,
+				861A8E3907CBD72A70214B2D72B151A7 /* Pod */,
+				FD37EFFB107F49B6CA10F9315696F876 /* Support Files */,
+			);
+			name = PepperPairing;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		861A8E3907CBD72A70214B2D72B151A7 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				89F37EA3836B73B8C9829C4F45685DA5 /* LICENSE */,
+				DA9B533FFBA7E6710BE02F6EC84F9160 /* PepperPairing.podspec */,
+				32179746E0E78C1C5F7A176AF16E0F91 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		B83877DD275C23C36060A1858F9B0594 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6CBEFE4F9E22AFDC6347A739BB35FF8C /* CocoaAsyncSocket.framework */,
+				BAACA1BF7AB3DD28402C4F9A7C2FD104 /* JSONModel.framework */,
+				B5E70088CAD5D21F304A7B67DA91DC6F /* PepperPairing.framework */,
+				5B7F543FCB32DC2817FAE9FFAAE0DC46 /* Pods_PepperPairing_Example.framework */,
+				5438607C0C50193FC5261B6DB34571DB /* Pods_PepperPairing_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF5EF7507EC5B17DAC65854DC5E3435F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EDBF978FFD971B8F6DBB6A3AC38A6E01 /* Pods-PepperPairing_Example */,
+				601E8ACBAC8E9D01C67C0545DAF224C2 /* Pods-PepperPairing_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C66F44DF26728A3F0058F11E /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				C66F44E326728A3F0058F11E /* SoftAPAccountCommand.m */,
+				C66F44E526728A3F0058F11E /* SoftAPAccountCommand.h */,
+				C66F44E926728A3F0058F11E /* SoftAPEncryptedWifiCommand.h */,
+				C66F44E426728A3F0058F11E /* SoftAPEncryptedWifiCommand.m */,
+				C66F44E226728A3F0058F11E /* SoftAPCommandBase.m */,
+				C66F44E626728A3F0058F11E /* SoftAPCommandBase.h */,
+				C66F44E726728A3F0058F11E /* SoftAPEncryptedWifiData.m */,
+				C66F44E126728A3F0058F11E /* SoftAPEncryptedWifiData.h */,
+				C66F44E826728A3F0058F11E /* SoftAPWifiCommand.m */,
+				C66F44E026728A3F0058F11E /* SoftAPWifiCommand.h */,
+			);
+			path = Commands;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				241CA963C1B7F4B7433A931374B6C25D /* Development Pods */,
+				1A3E0EE19DF23E1AD41A79EC8048EC9E /* Frameworks */,
+				E020EE7BCBD68FDE8B9F38FF7CB64690 /* Pods */,
+				B83877DD275C23C36060A1858F9B0594 /* Products */,
+				BF5EF7507EC5B17DAC65854DC5E3435F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D53BDF8A19AE1B2AEC521006A5D78281 /* JSONModel */ = {
+			isa = PBXGroup;
+			children = (
+				2374B9EB04AC649C25F1397520F9E6A2 /* JSONAPI.h */,
+				A6E99C77FA41445F8B406F93F598842A /* JSONAPI.m */,
+				880253F36F54CF7257631BBCF5EDAB3E /* JSONHTTPClient.h */,
+				96E7DD1AA62E8E03FFB4B70BAACBCD42 /* JSONHTTPClient.m */,
+				C525826EAC96A9B076F8423D3DACDBC4 /* JSONKeyMapper.h */,
+				C8FC0361C2F3F013BAC8124A38489E87 /* JSONKeyMapper.m */,
+				6F7CDF10E3610FBA6315C63A6F4CDE9A /* JSONModel.h */,
+				68DD96BD6A9D9B95909F36E7ECE34CC4 /* JSONModel.m */,
+				357BD559DF1AF43A7150A6D06C235EB9 /* JSONModel+networking.h */,
+				851DB412CAC96A0976D4868B73A3E39D /* JSONModel+networking.m */,
+				B98A7427B9935E39B49AE01C7284B0AB /* JSONModelClassProperty.h */,
+				FD3A727648F1BEB17CD5C649FCB2D3D7 /* JSONModelClassProperty.m */,
+				F213591EEDEAD80E43165E87569F573C /* JSONModelError.h */,
+				CD13860B02216DAF9C53F2B8E21EAB9F /* JSONModelError.m */,
+				AB1A6CC30A0B1991957AFA0FE7066A79 /* JSONModelLib.h */,
+				8E0F90A437D214AE8B6C1485D11D8B74 /* JSONValueTransformer.h */,
+				F83435FEEAB1BB9884DF5F24EB4B20D0 /* JSONValueTransformer.m */,
+				586C49A5E7516ACD1FEE0C36003077D8 /* Support Files */,
+			);
+			path = JSONModel;
+			sourceTree = "<group>";
+		};
+		E020EE7BCBD68FDE8B9F38FF7CB64690 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C0B13A48B87FF5F6CA9A20E433BB865 /* CocoaAsyncSocket */,
+				D53BDF8A19AE1B2AEC521006A5D78281 /* JSONModel */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EDBF978FFD971B8F6DBB6A3AC38A6E01 /* Pods-PepperPairing_Example */ = {
+			isa = PBXGroup;
+			children = (
+				C7DA69A495D477EFA1ED23F546A1F39F /* Pods-PepperPairing_Example.modulemap */,
+				5AD1B7EA9F2DD53BF178F661ED6B3247 /* Pods-PepperPairing_Example-acknowledgements.markdown */,
+				4C4258031DFEAD4DBCC376786C60EB29 /* Pods-PepperPairing_Example-acknowledgements.plist */,
+				C5BB131D33A3692D91D826B5E38FE253 /* Pods-PepperPairing_Example-dummy.m */,
+				D953DF8108E13BC6DD8FE719E657E922 /* Pods-PepperPairing_Example-frameworks.sh */,
+				8E1E518CAA6BE26FDEABCD49137331DB /* Pods-PepperPairing_Example-Info.plist */,
+				C24F7674810B9FB534136B5FC0C7853F /* Pods-PepperPairing_Example-umbrella.h */,
+				E5667D8901AA92415B961CDDFEBF5BDB /* Pods-PepperPairing_Example.debug.xcconfig */,
+				FC0A2AFEF3E46EE72741B89F784FA700 /* Pods-PepperPairing_Example.release.xcconfig */,
+			);
+			name = "Pods-PepperPairing_Example";
+			path = "Target Support Files/Pods-PepperPairing_Example";
+			sourceTree = "<group>";
+		};
+		FD37EFFB107F49B6CA10F9315696F876 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				298E7FE1B5C01F463255EA6D508BE825 /* PepperPairing.modulemap */,
+				E06BF851F88650FB859AA1735B3B1624 /* PepperPairing-dummy.m */,
+				4A966E9F4F132E96CB4984023BDF617D /* PepperPairing-Info.plist */,
+				D5102F62C80B61EF8B25B84E374D062B /* PepperPairing-prefix.pch */,
+				231CA7854690FDEA9BBE625DF18B4326 /* PepperPairing-umbrella.h */,
+				A3906EF035F8C227B6AEE2DCE43B3BD6 /* PepperPairing.debug.xcconfig */,
+				9036B48E341B03E8E34F222C4DB198A2 /* PepperPairing.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/PepperPairing";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		573185F68FFD76983666FC20D95E99E3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78FB367CED1A89B739A3F332D406705C /* Pods-PepperPairing_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7A545FFEB2EE40AF55A3E81E764FD59 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C65CF9E526729349007C8857 /* JSONHelper.h in Headers */,
+				C66F44EA26728A3F0058F11E /* SoftAPWifiCommand.h in Headers */,
+				C6A8FC992677A4290003DAA1 /* SoftApStartParams.h in Headers */,
+				C668E3912673F0C700C893AF /* SoftAPResponses.h in Headers */,
+				C66F44F026728A400058F11E /* SoftAPCommandBase.h in Headers */,
+				D12B319179384589BDC8DAA78A9D1E81 /* PepperPairing-umbrella.h in Headers */,
+				C66F44F326728A400058F11E /* SoftAPEncryptedWifiCommand.h in Headers */,
+				F91B873BE7A0C90841F96C7082C2FDEB /* SoftAPManager.h in Headers */,
+				C66F44EF26728A400058F11E /* SoftAPAccountCommand.h in Headers */,
+				C668E40F267798CD00C893AF /* CryptoHelper.h in Headers */,
+				C66F44EB26728A3F0058F11E /* SoftAPEncryptedWifiData.h in Headers */,
+				92A2EE937DD5518762F99782A3CE3C5F /* TcpSocket.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C10AE64316B9C31B3BB6170AF9933749 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AEA2F22B88CD78E671F25B60DB66ADA /* JSONAPI.h in Headers */,
+				1071D84B6431759A11FAEBAAE29E3F32 /* JSONHTTPClient.h in Headers */,
+				C7850AB3F7B5FDCA4F1F47F1EC205276 /* JSONKeyMapper.h in Headers */,
+				191126E8D5A1E26339D2B767EF3AE197 /* JSONModel+networking.h in Headers */,
+				DFF8D80125C062F6646E6EE798E6ABA3 /* JSONModel-umbrella.h in Headers */,
+				75C939C90205A780AB001C84A0B90C24 /* JSONModel.h in Headers */,
+				D358BCEB69D2E10B9BC6504C93D7D14C /* JSONModelClassProperty.h in Headers */,
+				02E2954BD351E7B167D8F60B13208DAF /* JSONModelError.h in Headers */,
+				C25BD96E691172D62B98B2F5F8D7F0C7 /* JSONModelLib.h in Headers */,
+				E3886BA871A93B03E984D8BD7823D947 /* JSONValueTransformer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E07C5EFC007E6C30EA2283051BF7A436 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6844C61FD241B8F2801FD825F2257230 /* Pods-PepperPairing_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F82807D639FCFDF56A607D3970098A87 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2922C954DCA50DB1C087E9E9C9440393 /* CocoaAsyncSocket-umbrella.h in Headers */,
+				DF77DA76BD5962EE7DD383126BBBBAC8 /* GCDAsyncSocket.h in Headers */,
+				411EE6BA92B228BF3497175C14FC7A90 /* GCDAsyncUdpSocket.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6083682834ABE0AE7BD1CBF06CADD036 /* CocoaAsyncSocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65B2BBD8991DD61ACE6737AADB85AB43 /* Build configuration list for PBXNativeTarget "CocoaAsyncSocket" */;
+			buildPhases = (
+				F82807D639FCFDF56A607D3970098A87 /* Headers */,
+				4920E2F47EC0874D094992B0DD2CA9E7 /* Sources */,
+				160EF26C734A27A9436CAB7143AF8F15 /* Frameworks */,
+				B7B5EDC45A81FF70431CFBFB2ABDFFEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocoaAsyncSocket;
+			productName = CocoaAsyncSocket;
+			productReference = 6CBEFE4F9E22AFDC6347A739BB35FF8C /* CocoaAsyncSocket.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BAB1686759AF3EC58A5D80341F1F1190 /* Pods-PepperPairing_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 012AEF73D6D27B0532A70EE1FD503C7D /* Build configuration list for PBXNativeTarget "Pods-PepperPairing_Tests" */;
+			buildPhases = (
+				E07C5EFC007E6C30EA2283051BF7A436 /* Headers */,
+				CEED5E3ACF762129C25C1C6B3C666CA1 /* Sources */,
+				7238FF00EC54DCA476E588369778E3B4 /* Frameworks */,
+				83BCC7AF959B7A6C66B24C18E961DB91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				51C5D2EFCCA83ECE3A2D048C468BA4A3 /* PBXTargetDependency */,
+			);
+			name = "Pods-PepperPairing_Tests";
+			productName = "Pods-PepperPairing_Tests";
+			productReference = 5438607C0C50193FC5261B6DB34571DB /* Pods_PepperPairing_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C07B92F840B19D7D2551BBDFE77B1AF7 /* PepperPairing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 470ACE1525569FE68A775EB601D94106 /* Build configuration list for PBXNativeTarget "PepperPairing" */;
+			buildPhases = (
+				A7A545FFEB2EE40AF55A3E81E764FD59 /* Headers */,
+				3EB298FCC1DD2189B40CC4E6B840592D /* Sources */,
+				53100FBB14241BFD223009E38EE40D38 /* Frameworks */,
+				35740838B4F173A05138529E7A10F62D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E74C4F83AEA31A02A2210965BF0A297 /* PBXTargetDependency */,
+			);
+			name = PepperPairing;
+			productName = PepperPairing;
+			productReference = B5E70088CAD5D21F304A7B67DA91DC6F /* PepperPairing.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CB8D36295A60CFFDD6BA04419FD2142E /* Pods-PepperPairing_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C93015E195B17DE3F0828A1A082DF55E /* Build configuration list for PBXNativeTarget "Pods-PepperPairing_Example" */;
+			buildPhases = (
+				573185F68FFD76983666FC20D95E99E3 /* Headers */,
+				A2FE5E87DC96A0CE57CC5726E12A60A5 /* Sources */,
+				469B8C42120B8CB8830174F09997DA5B /* Frameworks */,
+				05D357262C470D368F0BD24BEAFDF803 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7132F0E0B3341E2935D0906B8D966299 /* PBXTargetDependency */,
+				960BEB2C66AECC93E5C2043B7EC1F152 /* PBXTargetDependency */,
+				ACD5972F0733410EAB5F7C35E9141457 /* PBXTargetDependency */,
+			);
+			name = "Pods-PepperPairing_Example";
+			productName = "Pods-PepperPairing_Example";
+			productReference = 5B7F543FCB32DC2817FAE9FFAAE0DC46 /* Pods_PepperPairing_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E0EAF4371C6E4B30A1779D513CB4355B /* JSONModel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 864246C4794538189B6310F839B9CD50 /* Build configuration list for PBXNativeTarget "JSONModel" */;
+			buildPhases = (
+				C10AE64316B9C31B3BB6170AF9933749 /* Headers */,
+				9110B95813C4D6328D3D0802138CFDE0 /* Sources */,
+				886E050E05F79FD43F2409BED7E67F73 /* Frameworks */,
+				33431436401EBC85BE0A907D9728DA1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JSONModel;
+			productName = JSONModel;
+			productReference = BAACA1BF7AB3DD28402C4F9A7C2FD104 /* JSONModel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = B83877DD275C23C36060A1858F9B0594 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6083682834ABE0AE7BD1CBF06CADD036 /* CocoaAsyncSocket */,
+				E0EAF4371C6E4B30A1779D513CB4355B /* JSONModel */,
+				C07B92F840B19D7D2551BBDFE77B1AF7 /* PepperPairing */,
+				CB8D36295A60CFFDD6BA04419FD2142E /* Pods-PepperPairing_Example */,
+				BAB1686759AF3EC58A5D80341F1F1190 /* Pods-PepperPairing_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		05D357262C470D368F0BD24BEAFDF803 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33431436401EBC85BE0A907D9728DA1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35740838B4F173A05138529E7A10F62D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83BCC7AF959B7A6C66B24C18E961DB91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7B5EDC45A81FF70431CFBFB2ABDFFEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3EB298FCC1DD2189B40CC4E6B840592D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C66F44EE26728A400058F11E /* SoftAPEncryptedWifiCommand.m in Sources */,
+				C65CF9DE26729331007C8857 /* JSONHelper.m in Sources */,
+				C668E3862673F0C200C893AF /* SoftAPManager.m in Sources */,
+				C66F44F226728A400058F11E /* SoftAPWifiCommand.m in Sources */,
+				C66F44F126728A400058F11E /* SoftAPEncryptedWifiData.m in Sources */,
+				C66F44ED26728A3F0058F11E /* SoftAPAccountCommand.m in Sources */,
+				C668E39C2673F0CB00C893AF /* SoftAPResponses.m in Sources */,
+				C861E9BB191BDFF051C6EBBFEF00A6DF /* PepperPairing-dummy.m in Sources */,
+				C668E3E42673F72500C893AF /* SoftApStartParams.m in Sources */,
+				C66F44EC26728A3F0058F11E /* SoftAPCommandBase.m in Sources */,
+				C668E408267798BF00C893AF /* CryptoHelper.m in Sources */,
+				C994BC52E067FC5342520CF6C095769E /* TcpSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4920E2F47EC0874D094992B0DD2CA9E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBB70AF3F803450935EE98C837D98688 /* CocoaAsyncSocket-dummy.m in Sources */,
+				1C7C608091334B29AA1F96D400B24326 /* GCDAsyncSocket.m in Sources */,
+				6FFB23DD5E8DD756D3A4AB53EEE4BA8E /* GCDAsyncUdpSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9110B95813C4D6328D3D0802138CFDE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C65CBBF120A2DD097498BFA38119D466 /* JSONAPI.m in Sources */,
+				B4C7BC969594EB3E9323674B7FF7C66E /* JSONHTTPClient.m in Sources */,
+				26A3D3037A05E7E99AFF098D11427775 /* JSONKeyMapper.m in Sources */,
+				CFD38BDDB48F8D35B9A858E957A933A2 /* JSONModel+networking.m in Sources */,
+				F442593E37B8F49398FDB1974EDF3FD6 /* JSONModel-dummy.m in Sources */,
+				6FCDE0D44543F4DABF90A88E056D8199 /* JSONModel.m in Sources */,
+				C64C8DE746D376EEA160794275302677 /* JSONModelClassProperty.m in Sources */,
+				A52DD788A5384665F425D6A2C7493AD0 /* JSONModelError.m in Sources */,
+				B0BA1C31A2A3AB25BC95A4B2DE0A7B5D /* JSONValueTransformer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2FE5E87DC96A0CE57CC5726E12A60A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F35C9D85B892F665601ABD6A63A46E37 /* Pods-PepperPairing_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEED5E3ACF762129C25C1C6B3C666CA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0BA8F451936EBF752F8D2524922AF4F /* Pods-PepperPairing_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4E74C4F83AEA31A02A2210965BF0A297 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaAsyncSocket;
+			target = 6083682834ABE0AE7BD1CBF06CADD036 /* CocoaAsyncSocket */;
+			targetProxy = C1C763421DD097ACC496AEE0E2AAD161 /* PBXContainerItemProxy */;
+		};
+		51C5D2EFCCA83ECE3A2D048C468BA4A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-PepperPairing_Example";
+			target = CB8D36295A60CFFDD6BA04419FD2142E /* Pods-PepperPairing_Example */;
+			targetProxy = F1E1B7021AEA3067E30A1B2917B56842 /* PBXContainerItemProxy */;
+		};
+		7132F0E0B3341E2935D0906B8D966299 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaAsyncSocket;
+			target = 6083682834ABE0AE7BD1CBF06CADD036 /* CocoaAsyncSocket */;
+			targetProxy = 71C0AAED571EEDCFDF61687A96212DDF /* PBXContainerItemProxy */;
+		};
+		960BEB2C66AECC93E5C2043B7EC1F152 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JSONModel;
+			target = E0EAF4371C6E4B30A1779D513CB4355B /* JSONModel */;
+			targetProxy = 45396E4A488E99315FB7A397769C3696 /* PBXContainerItemProxy */;
+		};
+		ACD5972F0733410EAB5F7C35E9141457 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PepperPairing;
+			target = C07B92F840B19D7D2551BBDFE77B1AF7 /* PepperPairing */;
+			targetProxy = 15E6BB2251BBAE6FEC29A2151146AEED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00A4B6E256C3879DE17E5AF7EED1C702 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3799222908DBFA8286F3AD623EB02E0F /* CocoaAsyncSocket.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket.modulemap";
+				PRODUCT_MODULE_NAME = CocoaAsyncSocket;
+				PRODUCT_NAME = CocoaAsyncSocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		4AD4A8202FD314B997CCB1989806D260 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F45B7325036797A153FB27CE4EFEC82C /* JSONModel.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JSONModel/JSONModel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JSONModel/JSONModel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JSONModel/JSONModel.modulemap";
+				PRODUCT_MODULE_NAME = JSONModel;
+				PRODUCT_NAME = JSONModel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4EFB7257C6F07EB735EED059EF0F72EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25685113D52327950321ACDE6E043C3C /* Pods-PepperPairing_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PepperPairing_Tests/Pods-PepperPairing_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PepperPairing_Tests/Pods-PepperPairing_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		592A566EEC4171BC630F29402485DF7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5667D8901AA92415B961CDDFEBF5BDB /* Pods-PepperPairing_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PepperPairing_Example/Pods-PepperPairing_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PepperPairing_Example/Pods-PepperPairing_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		64582939F754C0347F9FAD47C3888BC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC0A2AFEF3E46EE72741B89F784FA700 /* Pods-PepperPairing_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PepperPairing_Example/Pods-PepperPairing_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PepperPairing_Example/Pods-PepperPairing_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7A4A416E29DF0588D827B5F5D541C886 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4E6C8050D6955C612D68280F7F9C7A4 /* CocoaAsyncSocket.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket.modulemap";
+				PRODUCT_MODULE_NAME = CocoaAsyncSocket;
+				PRODUCT_NAME = CocoaAsyncSocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8C2FCD88DF1F96EA70FF762C21DB833A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B185F4A313595B362F745100D15524C3 /* JSONModel.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JSONModel/JSONModel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JSONModel/JSONModel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JSONModel/JSONModel.modulemap";
+				PRODUCT_MODULE_NAME = JSONModel;
+				PRODUCT_NAME = JSONModel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		DD6CFD3A8EEAE690CF6E8B791B7DD693 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EDD9FAFE0FC399ECCADE00263A56709 /* Pods-PepperPairing_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PepperPairing_Tests/Pods-PepperPairing_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PepperPairing_Tests/Pods-PepperPairing_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E712EEB04B978BB6F2DD32A69F55B0D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9036B48E341B03E8E34F222C4DB198A2 /* PepperPairing.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PepperPairing/PepperPairing-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PepperPairing/PepperPairing-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PepperPairing/PepperPairing.modulemap";
+				PRODUCT_MODULE_NAME = PepperPairing;
+				PRODUCT_NAME = PepperPairing;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FBD3B234BD4F6DCAE1418160554EFE17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3906EF035F8C227B6AEE2DCE43B3BD6 /* PepperPairing.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PepperPairing/PepperPairing-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PepperPairing/PepperPairing-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PepperPairing/PepperPairing.modulemap";
+				PRODUCT_MODULE_NAME = PepperPairing;
+				PRODUCT_NAME = PepperPairing;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		012AEF73D6D27B0532A70EE1FD503C7D /* Build configuration list for PBXNativeTarget "Pods-PepperPairing_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD6CFD3A8EEAE690CF6E8B791B7DD693 /* Debug */,
+				4EFB7257C6F07EB735EED059EF0F72EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		470ACE1525569FE68A775EB601D94106 /* Build configuration list for PBXNativeTarget "PepperPairing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBD3B234BD4F6DCAE1418160554EFE17 /* Debug */,
+				E712EEB04B978BB6F2DD32A69F55B0D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
+				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65B2BBD8991DD61ACE6737AADB85AB43 /* Build configuration list for PBXNativeTarget "CocoaAsyncSocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A4A416E29DF0588D827B5F5D541C886 /* Debug */,
+				00A4B6E256C3879DE17E5AF7EED1C702 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		864246C4794538189B6310F839B9CD50 /* Build configuration list for PBXNativeTarget "JSONModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AD4A8202FD314B997CCB1989806D260 /* Debug */,
+				8C2FCD88DF1F96EA70FF762C21DB833A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C93015E195B17DE3F0828A1A082DF55E /* Build configuration list for PBXNativeTarget "Pods-PepperPairing_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				592A566EEC4171BC630F29402485DF7F /* Debug */,
+				64582939F754C0347F9FAD47C3888BC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

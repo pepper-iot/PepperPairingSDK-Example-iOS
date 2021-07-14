@@ -69,6 +69,8 @@
     
     WifiCredentialsViewController *wifiCredsVc = [self.storyboard instantiateViewControllerWithIdentifier:@"WifiCredentialsViewController"];
     wifiCredsVc.ssid = [wifiList objectAtIndex:indexPath.row];
+    NSMutableDictionary* wifiInfo = [SoftAPManager.sharedManager getWifiInfo:[wifiList objectAtIndex:indexPath.row]];
+    NSLog(@"Info for chosen SSID: %@", wifiInfo);
     [self.navigationController pushViewController:wifiCredsVc animated:true];
 }
 

@@ -26,15 +26,11 @@
     int shiftCipher = [[formatter numberFromString:self.shiftCipherTextField.text] unsignedIntValue];
 
     // Initialize the SoftAPManager
-    [[SoftAPManager sharedManager] initialize:self.hostTextField.text port:portNumber shiftCipher:shiftCipher timeout:30 encodingType:NSUTF8StringEncoding completion:^(BOOL connected) {
+    [[SoftAPManager sharedManager] initialize:self.hostTextField.text port:portNumber shiftCipher:shiftCipher timeout:30 encodingType:NSUTF8StringEncoding completion:^(NSError* err) {
         // Must access ui on the main thread
         // TODO: Research executing the completion block on the main queue
         dispatch_async(dispatch_get_main_queue(), ^() {
-            if (connected) {
-                NSLog(@"Connected!");
-                WifiViewController *wifiVc = [self.storyboard instantiateViewControllerWithIdentifier:@"WifiViewController"];
-                [self.navigationController pushViewController:wifiVc animated:true];
-            } else {
+            if (err) {
                 NSString* alertMsg = [NSString stringWithFormat:@"Failed to connect to Host = %@, Port = %d, Shift Cipher = %@", self.hostTextField.text, portNumber, self.shiftCipherTextField.text];
                 NSLog(@"%@", alertMsg);
                 UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Connect" message:alertMsg preferredStyle:UIAlertControllerStyleAlert];
@@ -42,6 +38,10 @@
                    handler:^(UIAlertAction * action) {}];
                 [alert addAction:defaultAction];
                 [self presentViewController:alert animated:true completion:nil];
+            } else {
+                NSLog(@"Connected!");
+                WifiViewController *wifiVc = [self.storyboard instantiateViewControllerWithIdentifier:@"WifiViewController"];
+                [self.navigationController pushViewController:wifiVc animated:true];
             }
         });
     }];
@@ -58,7 +58,7 @@
         dispatch_async(dispatch_get_main_queue(), ^() {
             NSString* alertMsg;
             if (connectedPrefix) {
-                NSLog(@"Auto join device hotspot with prefix: %@", connectedPrefix);
+                NSLog(@"Joined device hotspot with prefix: %@", connectedPrefix);
                 alertMsg = @"Joined! Now hit 'Connect to Device' to start the SoftAP flow.";
             } else {
                 NSLog(@"Failed to join hotspot with prefix: %@", prefix);
